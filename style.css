@@ -115,12 +115,12 @@ section.containers > #result > i {
 
 @media (max-width: 680px) {
    section.containers > .cards {
-    width: 70px;
-    height: 90px;
+    width: 67px;
+    height: 87px;
    }
 
    section.containers {
-    gap: 40px;
+    gap: 30px;
    }
 
    h1, h2 {
