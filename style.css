@@ -36,7 +36,7 @@ section.containers {
     justify-content: center;
     align-items: center;
     gap: 70px;
-    margin-top: 15px;
+    margin: 15px 0px 10px 0px;
     filter: blur(2px);
     position: relative;
 }
@@ -111,6 +111,7 @@ section.containers > #result > i {
     font-size: 25px;
     cursor: pointer;
     color: #00f0a8;
+    margin-top: 5px;
 }
 
 @media (max-width: 680px) {
@@ -126,6 +127,10 @@ section.containers > #result > i {
    h1, h2 {
     font-size: 25px;
     margin: 10px 0px 20px 0px;
+   }
+
+   #start-game {
+    top: 45%;
    }
 }
 
