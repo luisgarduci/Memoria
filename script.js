@@ -119,8 +119,12 @@ const game_time = document.getElementById("game-time");
         }
 
         arraycards.sort(MisturarValores);
-
+        
+        //Adicionando as imagens aos cards
         for (let i = 0; i < frontcard.length; i++) {
             frontcard[i].src = arraycards[i];
         }
+        
+        //restartando o jogo
+        restart.addEventListener("click", () => window.location.reload());
         
