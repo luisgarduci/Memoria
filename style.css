@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Winter";
+    src: url(Winter\ Storm.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Winter";
+    background-color: rgb(238, 238, 238);
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+section.containers > .cards {
+    width: 90px;
+    height: 110px;
+    border: 2px solid black;
+    transform-style: preserve-3d;
+    transition: all 1s;  
+}
+
+section.containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 15px;
+    filter: blur(2px);
+    position: relative;
+}
+
+.container > .cards > .front, .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+   backface-visibility: hidden;
+}
+
+section.containers > .cards > .front {
+    position: absolute;
+    margin-top: 10px;
+}
+
+section.containers > .cards > .back {
+    -webkit-transform: rotate(180deg);
+}
+
+.flip {
+   -webkit-transform: rotateY(180deg);
+}
+
+#start-game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 5;
+    background-color: white;
+    border: 1px double black;
+    width: 300px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+#start-game > button {
+ background-color: lightgreen;
+ color: white;
+ width: 100px;
+ padding: 5px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+#start-game > button:hover {
+    background-color: rgb(160, 230, 160);
+}
+
+section.containers > #result {
+    position: absolute;
+    top: -225px;
+    z-index: 5;
+    background-color: white;
+    border: 1px double black;
+    width: 300px;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+}
+
+section.containers > #result > i {
+    font-size: 25px;
+    cursor: pointer;
+    color: #00f0a8;
+}
+
+@media (max-width: 680px) {
+   section.containers > .cards {
+    width: 70px;
+    height: 90px;
+   }
+
+   section.containers {
+    gap: 40px;
+   }
+
+   h1, h2 {
+    font-size: 25px;
+    margin: 10px 0px 20px 0px;
+   }
+}
+
+
