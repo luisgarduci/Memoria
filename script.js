@@ -42,7 +42,7 @@ const game_time = document.getElementById("game-time");
             arrayTurnedCards = [];
         }
             
-            }, 500)
+            }, 1)
             
             }
             })
